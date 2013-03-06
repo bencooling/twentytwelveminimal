@@ -1,0 +1,52 @@
+/*
+Theme Name:     twentytwelveminimal
+Theme URI:      https://github.com/bencooling/twentytwelveminimal
+Description:    A minimal child (starter) theme for cleanly extending twentytwelve
+Author:         Ben Cooling
+Author URI:     http: //bcooling.com.au
+Template:       twentytwelve
+Version:        0.1
+*/
+
+@import url("../twentytwelve/style.css");
+
+/* convienance functions
+-------------------------------------------------------------- */
+body, input, textarea, select, p, span, a, img, ul, ol, li {
+  margin:0; padding:0;
+}
+button,fieldset,img { border:none }
+ol, ul              { margin-left:0px; padding-left: 20px; }
+a, button           { cursor:pointer }
+textarea            {
+  resize:none; /*Turn off safari resize */
+  overflow: auto; /* remove scrollbar from windows */
+}
+*:focus { outline:none } /* chrome orange focus */
+input[type=text] {
+  /* standardise input fields */
+  height:30px; line-height:30px; padding: 0px 10px; text-transform: none;
+  /* remove ios rounded input fields */
+  -webkit-appearance: none;
+  -webkit-border-radius:0px;
+}
+.group:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+  }
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+.clear {
+  clear:both;
+}
+
+
+/* Internet Explorer 
+------------------------------------------- */
+/* Display:inline-block fix for ie7 (add class inline-block) */
+.lt-ie8 .inline-block {
+  zoom: 1; *display: inline;
+}
