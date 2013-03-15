@@ -23,13 +23,11 @@ textarea            {
   overflow: auto; /* remove scrollbar from windows */
 }
 *:focus { outline:none } /* chrome orange focus */
-input[type=text] {
-  /* standardise input fields */
+/*input[type=text] {
   height:30px; line-height:30px; padding: 0px 10px; text-transform: none;
-  /* remove ios rounded input fields */
   -webkit-appearance: none;
   -webkit-border-radius:0px;
-}
+}*/
 .group:after {
   visibility: hidden;
   display: block;
@@ -41,6 +39,25 @@ input[type=text] {
 *:first-child+html .group { zoom: 1; } /* IE7 */
 .clear {
   clear:both;
+}
+
+/* Header
+------------------------------------------- */
+
+
+/* Search Form
+------------------------------------------- */
+.search-form input         { width:175px; }
+.search-form button.add-on { height:30px; }
+.search-form .icon-search  { 
+  background-image:none; margin-top:0px; color: #555; 
+  width: 20px; height: 18px; line-height: 18px;
+}
+
+/* Footer
+------------------------------------------- */
+.foot {
+  text-align: center;
 }
 
 
